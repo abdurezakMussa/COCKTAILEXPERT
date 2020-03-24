@@ -4,37 +4,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-<<<<<<< HEAD
-  </head>
-  <body>
-    <ol>
-      <li>
-        Abdu
-      </li>
-      <li>
-        Eric 2
-      </li>
-      <li>
-        Kendall; Whaat's up?
-      </li>
-    </ol>
-  </body>
+  <title>Document</title>
+</head>
+
+<body>
+  <ol>
+    <li>
+      Abdu
+    </li>
+    <li>
+      Eric 2
+    </li>
+    <li>
+      Kendall; Whaat's up?
+    </li>
+  </ol>
+</body>
+
 </html>
-=======
 </head>
 
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-  $.ajax({
-        url: "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM&type=video",
-        method: "GET"
-      }).then(function(response) {
-        console.log(response);
-      });
+    $.ajax({
+      url: "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM&type=video",
+      method: "GET"
+    }).then(function (response) {
+      console.log(response);
+    });
+    var settings = {
+	async: true,
+	crossDomain: true,
+	url: "https://twitterbukativ1.p.rapidapi.com/search",
+	method: "GET",
+	headers: {
+		x-rapidapi-host: "TwitterBukatiV1.p.rapidapi.com",
+		x-rapidapi-key: "1435ec552fmsh887895207fcdf18p1f989ejsnca7e9411c3c4",
+		content-type: "application/x-www-form-urlencoded"
+	},
+	data: {
+		consumerKey: "wKhPFFLDboVEDrtUc2RBgk1ZM",
+		query: "Beyonce",
+		accessTokenKey: "2251332438-ipXwgsAviU4TtSmknQXZh3XtK1wxBl7It5bZtrG",
+		consumerSecret: "75cMVnbQJqkwOipNgsHC1kZ0tzgyduohWiyEJXdO1AsBRE0VTr",
+		accessTokenSecret: "gArxge7dzVYDQwoUcdLp09w9aiMpJQP4B1fOADgQgqU92"
+	}
+}
+$.ajax(settings).then(function (response) {
+	console.log(response);
+});
   </script>
 </body>
 
 </html>
->>>>>>> b4e2d769df8994740369f48af4d22a87a0ebda41
