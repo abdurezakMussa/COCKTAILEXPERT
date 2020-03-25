@@ -26,18 +26,17 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Iceberg&display=swap" rel="stylesheet">
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="text/javascipt" href="javascipt.js">
-</head>
 
+</head>
 <body>
 
   <h2 >Welcome to APi Project</h2>
   <div class="container">
     <h3>Search from anything</h3>
-    <input type="text" placeholder="Search...">
-    <div class="search"></div>
+    <input type="text" placeholder="Alcohol Type(ex: vodka)">
+	<div class="search"></div>
   </div>
   <!-- <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,24 +47,24 @@
     }).then(function (response) {
       console.log(response);
     });
-    var settings = {
-	async: true,
-	crossDomain: true,
-	url: "https://twitterbukativ1.p.rapidapi.com/search",
-	method: "GET",
-	headers: {
-		x-rapidapi-host: "TwitterBukatiV1.p.rapidapi.com",
-		x-rapidapi-key: "1435ec552fmsh887895207fcdf18p1f989ejsnca7e9411c3c4",
-		content-type: "application/x-www-form-urlencoded"
-	},
-	data: {
-		consumerKey: "wKhPFFLDboVEDrtUc2RBgk1ZM",
-		query: "Beyonce",
-		accessTokenKey: "2251332438-ipXwgsAviU4TtSmknQXZh3XtK1wxBl7It5bZtrG",
-		consumerSecret: "75cMVnbQJqkwOipNgsHC1kZ0tzgyduohWiyEJXdO1AsBRE0VTr",
-		accessTokenSecret: "gArxge7dzVYDQwoUcdLp09w9aiMpJQP4B1fOADgQgqU92"
-	}
-}
+  //  var settings = {
+	//async: true,
+//	crossDomain: true,
+	//url: "https://twitterbukativ1.p.rapidapi.com/search",
+//	method: "GET",
+//	headers: {
+//		x-rapidapi-host: "TwitterBukatiV1.p.rapidapi.com",
+//		x-rapidapi-key: "1435ec552fmsh887895207fcdf18p1f989ejsnca7e9411c3c4",
+//		content-type: "application/x-www-form-urlencoded"
+//	},
+////	data: {
+//		consumerKey: "wKhPFFLDboVEDrtUc2RBgk1ZM",
+//		query: "Beyonce",
+	//	accessTokenKey: "2251332438-ipXwgsAviU4TtSmknQXZh3XtK1wxBl7It5bZtrG",
+//		consumerSecret: "75cMVnbQJqkwOipNgsHC1kZ0tzgyduohWiyEJXdO1AsBRE0VTr",
+//		accessTokenSecret: "gArxge7dzVYDQwoUcdLp09w9aiMpJQP4B1fOADgQgqU92"
+///	}
+//}
 $.ajax(settings).then(function (response) {
 	console.log(response);
 });
@@ -75,9 +74,10 @@ $.ajax(settings).then(function (response) {
       method: "GET"
     }).then(function (response) {
       console.log(response.items[0].id.videoId);
+      
+</script>
 
-    });
-  </script>
 </body>
+<script src="javascript.js"></script>
 
 </html>
