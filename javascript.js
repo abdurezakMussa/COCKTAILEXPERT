@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(document).keypress(function (e) {
         if (e.which == 13) {
 
-            var ingredient = "gin"
+            var ingredient = ["gin", "vodka", "rum"]
 
             $.ajax({
                 url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient,
