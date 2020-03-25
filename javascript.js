@@ -191,17 +191,17 @@ function getButtons(prevPageToken, nextPageToken) {
     
     return btnoutput;
 }
+
+
+
 ////////////////////////////////////////////////////////
 //$(document).ready(function () {
 
 //     $(document).keypress(function (e) {
 //         if (e.which == 13) {
 
-<<<<<<< HEAD
-            var ingredient = ["gin", "vodka", "rum"]
-=======
-//             var ingredient = "gin"
->>>>>>> dd12ace2d05159c7e1027b39572627fab3361be3
+    // var ingredient = ["gin", "vodka", "rum"]
+//        //     var ingredient = "gin"
 
 //             $.ajax({
 //                 url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient,
@@ -221,8 +221,5 @@ function getButtons(prevPageToken, nextPageToken) {
 //     //     console.log(response.items[0].id.videoId);
 //     // });
 
-<<<<<<< HEAD
-})
-=======
-// })
->>>>>>> dd12ace2d05159c7e1027b39572627fab3361be3
+//})
+//// })
