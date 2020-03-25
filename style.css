@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 h2 {font-family: 'Iceberg', cursive; color: white; text-align: center; }
 /* html, body {
+=======
+h2 {color: white; text-align: center; }
+html, body {
+>>>>>>> 7701300491f009b60e42840a05911a17dd4a261e
     width: 100%;
     height: 100%;
 } */
