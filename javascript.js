@@ -7,10 +7,18 @@ $(document).ready(function () {
         }).then(function (response) {
             // var randomDrinkImage = response.drinks[0].strDrinkThumb
             // var randomDrinkName = response.drinks[0].strDrink
+            
             var drink = response
             //prepend the images to the divs created in the html
-            $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} id="randomDrinkImage" />`);
-            $("#drinkName").prepend(`<p> ${response.drinks[0].strDrink} id="randomDrinkName" </p>`)
+            $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} </p>`);
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strDrink} </p>`)
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strInstructions} </p>`)
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strAlcoholic} </p>`)
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strIngredient8} </p>`)
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strIngredient7} </p>`)
+
+
+
         });
     })
 
