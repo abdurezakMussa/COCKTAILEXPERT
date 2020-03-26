@@ -1,6 +1,7 @@
-//
-var gapikey = 'AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM';
- 
+script
+//var gapikey = 'AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM';
+var gapikey ='AIzaSyB3zWY2vQ-3gaNbHiCzUTEUwafJWMi0PIE'
+var c;
 $(function() {    
     // call fancybox pluggin
     $(".fancyboxIframe").fancybox({
@@ -19,7 +20,7 @@ $(function() {
             preload   : true
         }
     });
-    
+   // window.onload()
     $('#search-form').submit( function(e) {
         e.preventDefault();
     });
@@ -31,7 +32,7 @@ function searchYoutubevideo() {
     
     // get form input
     q = $('#search').val(); 
-    
+    cocktail(q);
     // run get request on API
     $.get(
         "https://www.googleapis.com/youtube/v3/search", {
@@ -106,7 +107,26 @@ function nextPage() {
             $('#buttons').append(buttons);
         });    
 }
- 
+// ////////////////////drinks///////////////////////////////////////////////
+ function cocktail(q)
+ {
+    $.ajax({
+        url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+q,
+        method: "GET"
+    }).then(function (response) {
+        // var randomDrinkImage = response.drinks[0].strDrinkThumb
+        // var randomDrinkName = response.drinks[0].strDrink
+        
+        //prepend the images to the divs created in the html
+        $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} id="randomDrinkImage" />`);
+         $("#drinkName").prepend(`<p> ${response.drinks[0].strdrink} id="randomDrinkName" </p>`)
+         var q =$(response.drinks[0].strDrink)
+       c=q;
+        console.log(c);
+        
+    });
+    
+ }
 // Previous page function
 function prevPage() {
     var token = $('#prev-button').data('token');
@@ -154,7 +174,7 @@ function prevPage() {
  
 // Build output
 function getOutput(item) {
-    var videoID = item.id.videoId;
+    var videoID = item.id.videoId; 
     var title = item.snippet.title;
     var description = item.snippet.description;
     var thumb = item.snippet.thumbnails.high.url;
@@ -191,35 +211,3 @@ function getButtons(prevPageToken, nextPageToken) {
     
     return btnoutput;
 }
-
-
-
-////////////////////////////////////////////////////////
-//$(document).ready(function () {
-
-//     $(document).keypress(function (e) {
-//         if (e.which == 13) {
-
-    // var ingredient = ["gin", "vodka", "rum"]
-//        //     var ingredient = "gin"
-
-//             $.ajax({
-//                 url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient,
-//                 method: "GET"
-//             }).then(function (response) {
-//                 console.log(response.drinks[0]);
-//             });
-//         }
-//     });
-
-//     // var music = "how+to+create" + ingredient + "cocktail"
-
-//     // $.ajax({
-//     //     url: "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM&type=video&q=" + music,
-//     //     method: "GET"
-//     // }).then(function (response) {
-//     //     console.log(response.items[0].id.videoId);
-//     // });
-
-//})
-//// })
