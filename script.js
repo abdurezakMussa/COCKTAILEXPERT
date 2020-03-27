@@ -1,35 +1,4 @@
-var gapikey ='AIzaSyB3zWY2vQ-3gaNbHiCzUTEUwafJWMi0PIE'
-$(document).ready(function () {
-
-    // $("#button").click(function () {
-    //     $.ajax({
-    //         url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
-    //         method: "GET"
-    //     }).then(function (response) {
-    //         // var randomDrinkImage = response.drinks[0].strDrinkThumb
-    //         // var randomDrinkName = response.drinks[0].strDrink
-            
-    //         var drink = response
-    //         //prepend the images to the divs created in the html
-    //         $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} </p>`);
-    //         $("#drinkName").prepend(`<p> ${response.drinks[0].strDrink} </p>`)
-    //         $("#drinkName").prepend(`<p> ${response.drinks[0].strInstructions} </p>`)
-    //         $("#drinkName").prepend(`<p> ${response.drinks[0].strAlcoholic} </p>`)
-
-    //         var ingredientKeys = Object.keys(response.drinks[0]);
-    //         for (var i = 0; i < ingredientKeys.length; i++) {
-    //             var ingredient = response.drinks[0][ingredientKeys[i]];
-    //             if (ingredient && ingredientKeys[i].startsWith("strIngredient")) {
-    //                 $("#drinkName").prepend(ingredient);
-    //             }
-    //         }
-    //     })
-
-
-
-
-//var c;
-var gapikey = 'AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM';
+var gapikey = 'AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM';// key for youtube API
 //var gapikey ='AIzaSyB3zWY2vQ-3gaNbHiCzUTEUwafJWMi0PIE'
 var c;
 $(function() {    
@@ -62,7 +31,7 @@ function searchYoutubevideo() {
     
     // get form input
     q = $('#search').val(); 
-    cocktail(q);
+   // cocktail(q);
     // run get request on API
     $.get(
         "https://www.googleapis.com/youtube/v3/search", {
@@ -140,38 +109,38 @@ function nextPage() {
 
 
 // ////////////////////drinks///////////////////////////////////////////////
- function cocktail(q)
- {
-    $.ajax({
-        // url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+q,
-      url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
-        method: "GET"
+//  function cocktail(q)
+//  {
+//     $.ajax({
+//         // url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+q,
+//       url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
+//         method: "GET"
 
-    }).then(function (response) {
-        // var randomDrinkImage = response.drinks[0].strDrinkThumb
-        // var randomDrinkName = response.drinks[0].strDrink
+//     }).then(function (response) {
+//         // var randomDrinkImage = response.drinks[0].strDrinkThumb
+//         // var randomDrinkName = response.drinks[0].strDrink
         
-        //prepend the images to the divs created in the html
-        $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} id="randomDrinkImage" widith:200px; height: 200px; />`);
-         $("#drinkName").prepend(`<p> ${response.drinks[0].strdrink} id="randomDrinkName" </p>`)
-         var q =$(response.drinks[0].strDrink)
-       c=q;
-    //    $(response.drinks)
-        console.log(c);
+//         //prepend the images to the divs created in the html
+//         $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} id="randomDrinkImage" widith:200px; height: 200px; />`);
+//          $("#drinkName").prepend(`<p> ${response.drinks[0].strdrink} id="randomDrinkName" </p>`)
+//          var q =$(response.drinks[0].strDrink)
+//        c=q;
+//     //    $(response.drinks)
+//         console.log(c);
         
-        //return c;
-        var ingredientKeys = Object.keys(response.drinks[0]);
-        for (var i = 0; i < ingredientKeys.length; i++) {
-            var ingredient = response.drinks[0][ingredientKeys[i]];
-            if (ingredient && ingredientKeys[i].startsWith("strIngredient")) {
-                console.log(ingredient);
-            }
-        }
+//         //return c;
+//         var ingredientKeys = Object.keys(response.drinks[0]);
+//         for (var i = 0; i < ingredientKeys.length; i++) {
+//             var ingredient = response.drinks[0][ingredientKeys[i]];
+//             if (ingredient && ingredientKeys[i].startsWith("strIngredient")) {
+//                 console.log(ingredient);
+//             }
+//         }
 
         
-    });
+//     });
     
- }
+//  }
 // Previous page function
 function prevPage() {
     var token = $('#prev-button').data('token');
@@ -256,4 +225,3 @@ function getButtons(prevPageToken, nextPageToken) {
     
     return btnoutput;
 }
-    });
