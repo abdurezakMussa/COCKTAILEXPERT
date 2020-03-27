@@ -11,21 +11,32 @@
   <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <title>Document</title>
-<link rel="icon" type="image/gif" href="Img/mar1.jpg" />
+  <link rel="icon" type="image/gif" href="Img/mar1.jpg" />
 
 </head>
 
 <body>
   <div class="content">
     <header>
-      <h5>Happy Hour</h5>
-    </header> 
+      <h5 class="banner">Happy Hour</h5>
+    </header>
     </br>
     <hr class="solid">
-    <h4 class="bio"> <button class="button">Mix it Up</button>
-    </br>
-       <q> This page is designed to give you an idea of Cocktails for Happy Hour or just special Occasions!</q>
+    
+    <h4 class="bio"> 
+      <div class="pressMe"> Press Me</div>
+      <a class="waves-effect waves-light btn-large" id="shaker"><i class="material-icons right"><img
+            src="Img/shaker.jpg" class="button" alt="shaker"></i>Mix it up </a>
+      <div class="pressMe"> Press Me</div>
+      </br>
+      </br>
+      <q> This page is designed to give you an idea of Cocktails for Happy Hour or just special Occasions!</q>
       </br>
       <q> How it works:</q>
       </br>
@@ -52,76 +63,73 @@
       </br>
       </br>
       <div class="wrapper">
-      <div class="row">
-        <div class="col-sm-6">
-          
-          
-          </br>
-        </div>
-        <div class="box1">
-         <h2 class="randomDrink">YOUR RANDOM DRINK:</h2> 
-          <div id="drinkImage">
+        <div class="row">
+          <div class="col-sm-6">
+
+
+            </br>
           </div>
-          </br>
-          <div id="drinkName">
+          <div class="box1">
+            <h2 class="randomDrink">YOUR RANDOM DRINK:</h2>
+            <div id="drinkImage">
+            </div>
+            </br>
+            <div id="drinkName">
+            </div>
           </div>
+          <br>
         </div>
-        <br>
+        </br>
+      </div>
+      <hr class="solid">
+      <div class="col-sm-6">
       </div>
       </br>
-    </div>
-    <hr class="solid">
-    <div class="col-sm-6">
-    </div>
-    </br>
-    <div class="box2">
-      <h6 class="inVideo"> YOUTUBE & #Chill: </h6>
-      <div id="drinkImage">
-        <div id="custom-search-input">
-          <div class="input-group col-md-12">
-              <form id="search-form" name="search-form" onsubmit="return searchYoutubevideo();">
-                  <input type="text" class="form-control" placeholder="Search...." id="search" />
-                  <span class="input-group-btn">
-                      <button class="btn btn-info btn-lg" type="submit" id="findNow">
-                          <i class="glyphicon glyphicon-search"></i>
-                      </button>
-                  </span>
+      <div class="box2">
+        <h6 class="inVideo"> YOUTUBE & #Chill: </h6>
+        <div id="drinkImage">
+          <div id="custom-search-input">
+            <div class="input-group col-md-12">
+              <form class="findNow" id="search-form" name="search-form" onsubmit="return searchYoutubevideo();">
+                <input type="text" class="form-control" placeholder="Search...." id="search" />
+                <span class="input-group-btn">
+                  <button class="btn btn-info btn-lg" type="submit" id="findNow">
+                    <i class="glyphicon glyphicon-search" id="youTube"></i>
+                  </button>
+                </span>
               </form>
+            </div>
           </div>
-      </div>
-<div id="results"></div>
-<div id="buttons"></div>
-      </div>
+          <div id="results"></div>
+          <div id="buttons"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
   </div>
   </div>
-</body>
-<br>
-<footer class="container">
+  </div>
+</footer class="footer">
   <div class="icons">
     <div class="connect"> CONNECT WITH US:</div>
     <br>
     <div class="row">
-      <li class="col-sm-3">
+      <li class="col-sm-4">
         <div class="name">Kendall Hill</div>
         <a href="https://github.com/hillkr2">
           <img src="Img/k1.jpg" class="social" alt="GitHub">
         </a>
       </li>
-      <li class="col-sm-3">
+      <li class="col-sm-4">
         <div class="name">Eric Ragland</div>
         <a href="https://github.com/raglandec">
           <img src="Img/eric1.jpg" class="social" alt="GitHub">
         </a>
       </li>
-      <li class="col-sm-3">
+      <li class="col-sm-4">
         <div class="name">Abdurezak </div>
         <a href="https://github.com/abdurezakMussa">
-          <img src="Img/abdu2.jpg" class="social"
-            alt="GitHub">
+          <img src="Img/abdu2.jpg" class="social" alt="GitHub">
         </a>
       </li>
 
@@ -131,5 +139,7 @@
     &copy; Copyright 2020 Kendall, Eric, Abdu
   </p>
 </footer>
+</body>
 <script src="javascript.js"></script>
+</html>
 
