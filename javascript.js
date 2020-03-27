@@ -1,5 +1,31 @@
-script
-//var gapikey = 'AIzaSyBSf7uC2AVIqzcoIr1Tg1v7WdMxBBbCITM';
+$(document).ready(function () {
+
+    $("#button").click(function () {
+        $.ajax({
+            url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
+            method: "GET"
+        }).then(function (response) {
+            // var randomDrinkImage = response.drinks[0].strDrinkThumb
+            // var randomDrinkName = response.drinks[0].strDrink
+            
+            var drink = response
+            //prepend the images to the divs created in the html
+            $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} </p>`);
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strDrink} </p>`)
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strInstructions} </p>`)
+            $("#drinkName").prepend(`<p> ${response.drinks[0].strAlcoholic} </p>`)
+
+            var ingredientKeys = Object.keys(response.drinks[0]);
+            for (var i = 0; i < ingredientKeys.length; i++) {
+                var ingredient = response.drinks[0][ingredientKeys[i]];
+                if (ingredient && ingredientKeys[i].startsWith("strIngredient")) {
+                    $("#drinkName").prepend(ingredient);
+                }
+            }
+        })
+
+
+
 var gapikey ='AIzaSyB3zWY2vQ-3gaNbHiCzUTEUwafJWMi0PIE'
 var c;
 $(function() {    
@@ -107,26 +133,7 @@ function nextPage() {
             $('#buttons').append(buttons);
         });    
 }
-// ////////////////////drinks///////////////////////////////////////////////
- function cocktail(q)
- {
-    $.ajax({
-        url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+q,
-        method: "GET"
-    }).then(function (response) {
-        // var randomDrinkImage = response.drinks[0].strDrinkThumb
-        // var randomDrinkName = response.drinks[0].strDrink
-        
-        //prepend the images to the divs created in the html
-        $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} id="randomDrinkImage" />`);
-         $("#drinkName").prepend(`<p> ${response.drinks[0].strdrink} id="randomDrinkName" </p>`)
-         var q =$(response.drinks[0].strDrink)
-       c=q;
-        console.log(c);
-        
-    });
-    
- }
+
 // Previous page function
 function prevPage() {
     var token = $('#prev-button').data('token');
@@ -210,4 +217,4 @@ function getButtons(prevPageToken, nextPageToken) {
     }
     
     return btnoutput;
-}
+})
