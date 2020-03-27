@@ -27,7 +27,7 @@ width: 62px;
 height: 62px;
 margin-top: 8px;
 margin-left: 150px;
-border-radius: 50%;
+border-radius: 10%;
 }
 /* Solid border */
 hr.solid {
@@ -38,10 +38,10 @@ font-size: x-large;
 font-style: bold;
 color: snow;
 text-align: center;
-margin-top: 20px;
+margin-top: 10px;
 margin-right: 50px;
 }
-.footer{
+.container{
 width: 100%;
 background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
 text-align: center;
@@ -58,7 +58,7 @@ font-size: medium;
 color: aqua;
 text-align: center;
 margin-left: 150px;
-margin-top: 50px;
+margin-top: 0px;
 }
 
 .mar{
@@ -154,6 +154,13 @@ background-color: black;
 text-align: center;
 width: 100%;
 margin-right: 100px;
+background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+text-align: center;
+font-size: 450%;
+color: yellow;
+border-style: solid;
+border-color: snow;
+text-decoration-style: double;
 }
 #col-sm-6{
 text-align: center;
