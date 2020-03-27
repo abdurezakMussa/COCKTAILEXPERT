@@ -3,7 +3,8 @@ body {
     margin: 0 auto;
     align-items: center;
     line-height: 150%;
-    background: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg")
+    background-color: skyblue;
+
   }
   h4{
     text-align: center;
@@ -24,7 +25,7 @@ margin-bottom: 0;
 }
 /* Solid border */
 hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 3px solid purple;
 }
 .connect{
   font-size: x-large;
@@ -33,22 +34,21 @@ hr.solid {
   text-align: center;
 }
 .container {
-  align-items: center;
+    background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+    text-align: center;
+    font-size: 450%;
+    color: yellow;
+    margin: right;
+    border-style: solid;
+    border-color: snow;
+    text-decoration-style: double;
+    width: 100%;
 }
 .name{
   font-size: medium;
   color: aqua;
   text-align: center;
   margin-right: auto;
-}
-.header{
-  text-align: center;
-  font-size: 450%;
-  color: yellow;
-  margin: right;
-  border-style: solid;
-  border-color: snow;
-  text-decoration-style: double;
 }
 
 .mar{
@@ -70,7 +70,7 @@ hr.solid {
 }
 .bio{
 width: 600px;
-border: 15px dotted snow;
+border: 15px solid snow;
 padding: 100px;
 text-align: center;
 color: yellow;
@@ -86,18 +86,31 @@ button{
 .col-sm-12{
   text-align: center;
 }
-.header{
+header{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+  height: 275px;
+  color: yellow;
+  border-style: solid;
+  border-color: snow;
+  text-decoration-style: double;
+}
+header h5{
+    font-size: 550%;
 }
 .randomDrink{
   text-align: center;
-  color: snow;
+  color: purple;
+  width: 100%;
 }
 .box1{
   box-sizing: border-box;
-  width: 840px;
+  width: 100%;
   height: 200px;
-  border: 5px solid yellow;
+  border: 5px solid snow;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -107,14 +120,14 @@ button{
   box-sizing: border-box;
   width: 840px;
   height: 200px;
-  border: 5px solid yellow;
+  border: 5px solid snow;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   }
 .inVideo{
   text-align: center;
-  color: snow;
+  color: purple;
   font-size: 250%;
   padding-right: 150px;
 }
@@ -122,12 +135,12 @@ button{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-width: 8em;
+  width: 840px;
   }
 p{
   text-align: center;
   color: snow;
-  font-size: 100%;
+  font-size: 25%;
   background-color: black;
 }
 .icons{
@@ -138,5 +151,5 @@ p{
   text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 8em;
+
   }
