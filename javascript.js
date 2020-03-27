@@ -14,7 +14,7 @@ $(document).ready(function () {
         });
     })
 
-var videoURL = "Beyonce"
+var videoURL =$('#drinkName').val();
 
     $(document).on('click','img',function(){
         $.ajax({
