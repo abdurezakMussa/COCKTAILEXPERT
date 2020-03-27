@@ -32,7 +32,7 @@ function searchYoutubevideo() {
     
     // get form input
     q = $('#search').val(); 
-    cocktail(q);
+  //  cocktail(q);
     // run get request on API
     $.get(
         "https://www.googleapis.com/youtube/v3/search", {
@@ -61,7 +61,6 @@ function searchYoutubevideo() {
             // Display buttons
             $('#buttons').append(buttons);
         });
-<<<<<<< HEAD
     })
 
 var videoURL =$('#drinkName').val();
@@ -100,8 +99,7 @@ var videoURL =$('#drinkName').val();
 // });
 
 
-=======
-}
+
  
 // Next page function
 function nextPage() {
@@ -251,4 +249,3 @@ function getButtons(prevPageToken, nextPageToken) {
     
     return btnoutput;
 }
->>>>>>> 2a154f2b8619ac0b87718b61e2b8ab536d749a6d
