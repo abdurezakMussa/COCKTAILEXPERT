@@ -25,9 +25,9 @@ align-items: center;
 .social {  
 width: 62px;
 height: 62px;
-margin-top: 8px;
-margin-left: 150px;
-border-radius: 10%;
+margin-left: 50px;
+border-radius: 50%;
+margin-bottom: 0px;
 }
 /* Solid border */
 hr.solid {
@@ -38,8 +38,7 @@ font-size: x-large;
 font-style: bold;
 color: snow;
 text-align: center;
-margin-top: 10px;
-margin-right: 50px;
+
 }
 .container{
 width: 100%;
@@ -58,7 +57,7 @@ font-size: medium;
 color: aqua;
 text-align: center;
 margin-left: 150px;
-margin-top: 0px;
+
 }
 
 .mar{
@@ -147,13 +146,15 @@ width: 840px;
 p{
 text-align: center;
 color: snow;
-font-size: 25%;
-background-color: black;
+font-size: 50%;
+background-color: purple;
+color: white;
 }
 .icons{
 text-align: center;
-width: 100%;
-margin-right: 100px;
+width: 40%;
+margin-right: auto;
+margin-left: auto;
 background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
 text-align: center;
 font-size: 450%;
