@@ -4,11 +4,11 @@ var c;
 $(function() {    
     // call fancybox pluggin
     $(".fancyboxIframe").fancybox({
-        maxWidth    : 900,
-        maxHeight    : 600,
+        maxWidth    : 200,
+        maxHeight    : 200,
         fitToView    : false,
-        width        : '90%',
-        height        : '90%',
+        width        : '50%',
+        height        : '50%',
         autoSize    : false,
         closeClick    : false,
         openEffect    : 'none',
