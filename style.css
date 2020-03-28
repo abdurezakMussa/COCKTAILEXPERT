@@ -1,3 +1,4 @@
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -46,16 +47,13 @@ margin: right;
 border-style: solid;
 border-color: snow;
 text-decoration-style: double;
-
 }
 .name{
 font-size: medium;
 color: aqua;
 text-align: center;
 margin-left: 150px;
-
 }
-
 .mar{
 width: 62px;
 height: 62px;
@@ -92,7 +90,6 @@ border-radius: 50%;
 text-align: center;
 }
 header{
-
 background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
 height: 275px;
 color: yellow;
@@ -169,7 +166,6 @@ text-align: center;
 text-align: center;
   margin-left: auto;
   margin-right: auto;
-
 }
 a {
   text-align: center;
