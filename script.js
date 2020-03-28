@@ -196,9 +196,9 @@ function getOutput(item) {
                             '<img src="' + thumb + '" class="img-responsive thumbnail" >' +
                         '</div>' +
                         '<div class="input-group col-md-6">' +
-                            '<h3><a data-fancybox-type="iframe" class="fancyboxIframe" href="http://youtube.com/embed/' + videoID + '?rel=0">' + title + '</a></h3>' +
-                            '<small>By <span class="channel"id="purple">' + channelTitle + '</spanid="purple"> on ' + videoDate + '</small>' + '</br>' + '</br>' +
-                            '<p>' + description + '</p id="purple">' +
+                            '<h3 id="purple"><a data-fancybox-type="iframe" class="fancyboxIframe" href="http://youtube.com/embed/' + videoID + '?rel=0">' + title + '</a></h3>' +
+                            '<small>By <span class="channel">' + channelTitle + '</span> on ' + videoDate + '</small>' + '</br>' + '</br>' +
+                            '<p>' + description + '</p>' +
                         '</div>' + 
                     '<div class="clearfix"></div>';
     return output;
