@@ -2,9 +2,7 @@ body {
     padding: 0;
     margin: 0 auto;
     align-items: center;
-  
-    background-color: skyblue;
-  
+    background-color:skyblue;
   }
   
   .banner{
@@ -43,8 +41,8 @@ body {
   font-size: 450%;
   color: yellow;
   margin: right;
-  border-style: solid;
-  border-color: snow;
+  /* border-style: solid;
+  border-color: snow; */
   text-decoration-style: double;
   }
   .name{
@@ -72,7 +70,7 @@ body {
   }
   .bio{
   width: 100%;
-  border: 15px solid snow;
+  /* border: 15px solid snow; */
   padding: 100px;
   text-align: center;
   color: purple;
@@ -93,7 +91,7 @@ body {
   height: 275px;
   color: yellow;
   border-style: solid;
-  border-color: snow;
+  /* border-color: snow; */
   text-decoration-style: double;
   }
   header h5{
@@ -108,7 +106,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 80%;
-  border: 5px solid snow;
+  /* border: 5px solid snow; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -119,7 +117,7 @@ body {
   box-sizing: border-box;
   width: 80%;
   height: 70%;
-  border: 5px solid snow;
+  /* border: 5px solid snow; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -156,9 +154,9 @@ body {
   font-size: 450%;
   color: yellow;
   border-style: solid;
-  border-color: snow;
+  /* border-color: snow; */
   text-decoration-style: double;
-  line-height: 20%;
+  line-height: 7%;
   }
   #col-sm-6{
   text-align: center;
@@ -204,3 +202,5 @@ body {
     border: 5px;
     margin: 0;
   }
+
+  
