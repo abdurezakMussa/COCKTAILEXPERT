@@ -106,37 +106,7 @@ function nextPage() {
             $('#buttons').append(buttons);
         });    
 }
-// ////////////////////drinks///////////////////////////////////////////////
-//  function cocktail(q)
-//  {
-//     $.ajax({
-//         // url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+q,
-//       url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
-//         method: "GET"
-//     }).then(function (response) {
-//         // var randomDrinkImage = response.drinks[0].strDrinkThumb
-//         // var randomDrinkName = response.drinks[0].strDrink
-        
-//         //prepend the images to the divs created in the html
-//         $("#drinkImage").prepend(`<img src=${response.drinks[0].strDrinkThumb} id="randomDrinkImage" widith:200px; height: 200px; />`);
-//          $("#drinkName").prepend(`<p> ${response.drinks[0].strdrink} id="randomDrinkName" </p>`)
-//          var q =$(response.drinks[0].strDrink)
-//        c=q;
-//     //    $(response.drinks)
-//         console.log(c);
-        
-//         //return c;
-//         var ingredientKeys = Object.keys(response.drinks[0]);
-//         for (var i = 0; i < ingredientKeys.length; i++) {
-//             var ingredient = response.drinks[0][ingredientKeys[i]];
-//             if (ingredient && ingredientKeys[i].startsWith("strIngredient")) {
-//                 console.log(ingredient);
-//             }
-//         }
-        
-//     });
-    
-//  }
+
 // Previous page function
 function prevPage() {
     var token = $('#prev-button').data('token');
