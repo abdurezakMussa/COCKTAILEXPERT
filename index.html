@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,12 +66,20 @@
       <div id="custom-search-input">
         <div class="input-group col-md-12">
           <form class="findNow" id="search-form" name="search-form" onsubmit="return searchYoutubevideo();">
-            <input type="text" class="form-control" placeholder="Search Youtube" id="search" />
-            <span class="input-group-btn">
+           
+             <input type="text" class="form-control" placeholder="Search Youtube" id="search" />
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+            
+           
+            <!-- <span class="input-group-btn">
               <button class="btn btn-info btn-lg" type="submit" id="findNow">
                 <i class="glyphicon glyphicon-search" id="youTube"></i>
               </button>
-            </span>
+            </span> -->
           </form>
         </div>
       </div>

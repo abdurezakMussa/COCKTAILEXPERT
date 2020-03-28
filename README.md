@@ -1,6 +1,7 @@
-This page is designed to give you an idea of Cocktails for Happy Hour or just special Occasions!
+# README 
+## This page is designed to give you an idea of Cocktails for Happy Hour or just special Occasions!
       
-      How it works:
+     How it works:
       
       1. Start by pressing the "Mix it up" button
       
@@ -12,3 +13,4 @@ This page is designed to give you an idea of Cocktails for Happy Hour or just sp
 
       5. If you need help, or just want to find something to watch while you enjoy your beverage, just scroll down and find something on Youtube!
       
+## To design the page 

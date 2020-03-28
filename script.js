@@ -106,7 +106,6 @@ function nextPage() {
             $('#buttons').append(buttons);
         });    
 }
-
 // Previous page function
 function prevPage() {
     var token = $('#prev-button').data('token');
