@@ -4,11 +4,11 @@ var c;
 $(function() {    
     // call fancybox pluggin
     $(".fancyboxIframe").fancybox({
-        maxWidth    : 200,
-        maxHeight    : 200,
+        maxWidth    : 900,
+        maxHeight    : 600,
         fitToView    : false,
-        width        : '50%',
-        height        : '50%',
+        width        : '90%',
+        height        : '90%',
         autoSize    : false,
         closeClick    : false,
         openEffect    : 'none',
@@ -106,8 +106,6 @@ function nextPage() {
             $('#buttons').append(buttons);
         });    
 }
-
-
 // ////////////////////drinks///////////////////////////////////////////////
 //  function cocktail(q)
 //  {
@@ -115,7 +113,6 @@ function nextPage() {
 //         // url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="+q,
 //       url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
 //         method: "GET"
-
 //     }).then(function (response) {
 //         // var randomDrinkImage = response.drinks[0].strDrinkThumb
 //         // var randomDrinkName = response.drinks[0].strDrink
@@ -136,7 +133,6 @@ function nextPage() {
 //                 console.log(ingredient);
 //             }
 //         }
-
         
 //     });
     
@@ -201,9 +197,9 @@ function getOutput(item) {
                         '</div>' +
                         '<div class="input-group col-md-6">' +
                             '<h3><a data-fancybox-type="iframe" class="fancyboxIframe" href="http://youtube.com/embed/' + videoID + '?rel=0">' + title + '</a></h3>' +
-                            '<small>By <span class="channel">' + channelTitle + '</span> on ' + videoDate + '</small>' +
-                            '<p>' + description + '</p>' +
-                        '</div>' +
+                            '<small>By <span class="channel"id="purple">' + channelTitle + '</spanid="purple"> on ' + videoDate + '</small>' + '</br>' + '</br>' +
+                            '<p>' + description + '</p id="purple">' +
+                        '</div>' + 
                     '<div class="clearfix"></div>';
     return output;
 }
