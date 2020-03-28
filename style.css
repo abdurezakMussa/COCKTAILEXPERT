@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     padding: 0;
     margin: 0 auto;
     align-items: center;
@@ -157,8 +158,186 @@ body {
   text-decoration-style: double;
   }
   #col-sm-6{
+=======
+  padding: 0;
+  margin: 0 auto;
+  align-items: center;
+
+  background-color: skyblue;
+
+}
+
+.banner{
+font-size: 550%;
+font-style: bold;
+font-weight: 0;
+margin-top: 100px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.social {  
+width: 62px;
+height: 62px;
+margin-left: 50px;
+border-radius: 50%;
+margin-bottom: 0px;
+}
+/* Solid border */
+hr.solid {
+  border-top: 3px solid purple;
+}
+.connect{
+font-size: x-large;
+font-style: bold;
+color: snow;
+text-align: center;
+margin-bottom: 20px;
+
+}
+.container{
+width: 100%;
+background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+text-align: center;
+font-size: 450%;
+color: yellow;
+margin: right;
+border-style: solid;
+border-color: snow;
+text-decoration-style: double;
+
+}
+.name{
+font-size: medium;
+color: aqua;
+text-align: center;
+margin-left: 150px;
+
+}
+
+.mar{
+width: 62px;
+height: 62px;
+margin-top: 8px;
+margin-right: 5px;
+}
+.intro{
+font-size: 250%;
+color:turquoise;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-stretch: inherit;
+font-style: italic;
+margin: right;
+padding: 30px;
+text-shadow: snow;
+}
+.bio{
+width: 100%;
+border: 15px solid snow;
+padding: 100px;
+text-align: center;
+color: purple;
+}
+.button{
+width: 52px;
+height: 52px;
+margin-top: 0px;
+margin-bottom: 10px;
+margin-left: 0px;
+border-radius: 50%;
+}
+.col-sm-12{
+text-align: center;
+}
+header{
+
+background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+height: 275px;
+color: yellow;
+border-style: solid;
+border-color: snow;
+text-decoration-style: double;
+}
+header h5{
+  font-size: 550%;
+}
+.randomDrink{
+text-align: center;
+color: purple;
+width: 100%;
+}
+.box1{
+box-sizing: border-box;
+width: 100%;
+height: 80%;
+border: 5px solid snow;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0px;
+}
+
+.box2{
+box-sizing: border-box;
+width: 80%;
+height: 70%;
+border: 5px solid snow;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.inVideo{
+text-align: center;
+color: purple;
+font-size: 250%;
+padding-right: 150px;
+}
+.wrapper{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width: 840px;
+}
+small, p {
+text-align: center;
+color: snow;
+font-size: 50%;
+background-color: purple;
+
+}
+h3{
+  color: purple;
+}
+.icons{
+text-align: center;
+height: 100%;
+margin-right: auto;
+margin-left: auto;
+background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+text-align: center;
+font-size: 450%;
+color: yellow;
+border-style: solid;
+border-color: snow;
+text-decoration-style: double;
+line-height: 20%;
+}
+#col-sm-6{
+text-align: center;
+text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+a {
+>>>>>>> a9bbe69f33df4883506ca3565533d612b55ae3c4
   text-align: center;
+}
+#shaker {
   text-align: center;
+<<<<<<< HEAD
     margin-left: auto;
     margin-right: auto;
   }
@@ -189,3 +368,38 @@ body {
   color: gray;
   font-style: italic;
   }
+=======
+  color:  black;
+  font-size: 150%;
+  font-style: bold;
+  background-color: purple;
+  border-style: solid;
+  border-color: black;
+}
+#findNow{
+  background-color: purple;
+}
+.form-control{
+  color: purple;
+}
+#search{
+  color: purple;
+}
+.pressMe{
+text-align: center;
+font-size: 50%;
+color: gray;
+font-style: italic;
+}
+.drinkBox{
+  width: 320px;
+  padding: 10px;
+  margin: 0;
+}
+.fancyboxIframe{
+  width: 320px;
+  padding: 10px;
+  border: 5px;
+  margin: 0;
+}
+>>>>>>> a9bbe69f33df4883506ca3565533d612b55ae3c4
