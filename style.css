@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     align-items: center;
     line-height: 150%;
-    background: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg")
+    background-color: skyblue;
   }
   h4{
     text-align: center;
@@ -11,37 +11,36 @@ body {
     margin-right: auto;
     width: 8em;
   }
-h5 {
-font-size: 18px;
-margin-bottom: 0;
+  .banner{
+  font-size: 550%;
+  font-style: bold;
+  font-weight: 0;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
-.social {  
+  .social {
   width: 62px;
   height: 62px;
-  margin-top: 8px;
-  margin-right: 5px;
+  margin-left: 50px;
   border-radius: 50%;
-}
-/* Solid border */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-.connect{
+  margin-bottom: 0px;
+  }
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid purple;
+  }
+  .connect{
   font-size: x-large;
   font-style: bold;
   color: snow;
   text-align: center;
-}
-.container {
-  align-items: center;
-}
-.name{
-  font-size: medium;
-  color: aqua;
-  text-align: center;
-  margin-right: auto;
-}
-.header{
+  }
+  .container{
+  width: 100%;
+  background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
   text-align: center;
   font-size: 450%;
   color: yellow;
@@ -49,15 +48,20 @@ hr.solid {
   border-style: solid;
   border-color: snow;
   text-decoration-style: double;
-}
-
-.mar{
+  }
+  .name{
+  font-size: medium;
+  color: aqua;
+  text-align: center;
+  margin-left: 150px;
+  }
+  .mar{
   width: 62px;
   height: 62px;
   margin-top: 8px;
   margin-right: 5px;
-}
-.intro{
+  }
+  .intro{
   font-size: 250%;
   color:turquoise;
   text-align: center;
@@ -67,76 +71,121 @@ hr.solid {
   margin: right;
   padding: 30px;
   text-shadow: snow;
-}
-.bio{
-width: 600px;
-border: 15px dotted snow;
-padding: 100px;
-text-align: center;
-color: yellow;
-}
-button{
-  color: green;
-  background-color: black;
-  padding:  15px 32px;
-  border-radius: 12px;
+  }
+  .bio{
+  width: 100%;
+  border: 15px solid snow;
+  padding: 100px;
   text-align: center;
-  margin: right;
-}
-.col-sm-12{
+  color: purple;
+  }
+  .button{
+  width: 52px;
+  height: 52px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  border-radius: 50%;
+  }
+  .col-sm-12{
   text-align: center;
-}
-.header{
+  }
+  header{
+  background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+  height: 275px;
+  color: yellow;
+  border-style: solid;
+  border-color: snow;
+  text-decoration-style: double;
+  }
+  header h5{
+    font-size: 550%;
+  }
+  .randomDrink{
   text-align: center;
-}
-.randomDrink{
-  text-align: center;
-  color: snow;
-}
-.box1{
+  color: purple;
+  width: 100%;
+  }
+  .box1{
   box-sizing: border-box;
-  width: 840px;
+  width: 100%;
   height: 200px;
-  border: 5px solid yellow;
+  border: 5px solid snow;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   }
-
-.box2{
+  .box2{
   box-sizing: border-box;
   width: 840px;
   height: 200px;
-  border: 5px solid yellow;
+  border: 5px solid snow;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   }
-.inVideo{
+  .inVideo{
   text-align: center;
-  color: snow;
+  color: purple;
   font-size: 250%;
   padding-right: 150px;
-}
-.wrapper{
+  }
+  .wrapper{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-width: 8em;
+  width: 840px;
   }
-p{
+  p{
   text-align: center;
   color: snow;
-  font-size: 100%;
-  background-color: black;
-}
-.icons{
+  font-size: 50%;
+  background-color: purple;
+  color: white;
+  }
+  .icons{
   text-align: center;
-}
-#col-sm-6{
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("https://i.pinimg.com/564x/dc/3d/c5/dc3dc5473d8d763e277ff88596152cb0.jpg");
+  text-align: center;
+  font-size: 450%;
+  color: yellow;
+  border-style: solid;
+  border-color: snow;
+  text-decoration-style: double;
+  }
+  #col-sm-6{
   text-align: center;
   text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 8em;
+  }
+  a {
+    text-align: center;
+  }
+  #shaker {
+    text-align: center;
+    color:  black;
+    font-size: 150%;
+    font-style: bold;
+    background-color: purple;
+    border-style: solid;
+    border-color: black;
+  }
+  #findNow{
+    background-color: purple;
+  }
+  .form-control{
+    color: purple;
+  }
+  #search{
+    color: purple;
+  }
+  .pressMe{
+  text-align: center;
+  font-size: 50%;
+  color: gray;
+  font-style: italic;
   }
